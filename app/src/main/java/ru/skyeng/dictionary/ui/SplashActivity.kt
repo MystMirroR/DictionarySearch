@@ -1,12 +1,13 @@
-package ru.skyeng.dictionary
+package ru.skyeng.dictionary.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import ru.skyeng.dictionary.R
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splash)
     }
 }
