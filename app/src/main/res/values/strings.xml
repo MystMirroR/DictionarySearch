@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Словарь значений</string>
+    <string name="search_hint">Введите искомое слово/фразу</string>
+    <string name="meaningImageDesc">meaningImage</string>
 </resources>

@@ -12,6 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import ru.skyeng.dictionary.data.api.SkyEngAPI
 import ru.skyeng.dictionary.data.remote.DictionaryRepo
 import ru.skyeng.dictionary.data.remote.DictionaryRepoImpl
+import ru.skyeng.dictionary.ui.meaning.MeaningViewModel
 import ru.skyeng.dictionary.ui.search.SearchViewModel
 import java.util.concurrent.TimeUnit
 
@@ -28,6 +29,7 @@ val appModules = module {
     factory<DictionaryRepo> { DictionaryRepoImpl(skyengAPI = get()) }
 
     viewModel { SearchViewModel(apiRepo = get()) }
+    viewModel { MeaningViewModel(apiRepo = get()) }
 }
 
 /* Returns a custom OkHttpClient instance with interceptor. Used for building Retrofit service */
